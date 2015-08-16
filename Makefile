@@ -8,11 +8,11 @@
 
 all: 		gameOfLife gameOfLife-ncurses-menu 
 
-gameOfLife: 	gameOfLife.cpp gameOfLife-week7 gameOfLife-ncurses-menu
+gameOfLife: 	gameOfLife.cpp gameOfLife-noAnim gameOfLife-ncurses-menu
 		g++ gameOfLife.cpp -o gameOfLife
 
-gameOfLife-week7: 	gameOfLife-week7.cpp
-			g++ gameOfLife-week7.cpp -o gameOfLife-week7
+gameOfLife-noAnim: 	gameOfLife-noAnim.cpp
+			g++ gameOfLife-noAnim.cpp -o gameOfLife-noAnim
 
 gameOfLife-ncurses-menu: gameOfLife-ncurses-menu.cpp
 		g++ gameOfLife-ncurses-menu.cpp -o gameOfLife-ncurses-menu -lncurses -lmenu

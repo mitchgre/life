@@ -136,7 +136,7 @@ void mainMenuLoop()
 	  system("./gameOfLife-ncurses-menu");
 	  break;
 	case 2:
-	  system("./gameOfLife-week7");
+	  system("./gameOfLife-noAnim");
 	  break;
 	case 3:
 	  exit(1);
